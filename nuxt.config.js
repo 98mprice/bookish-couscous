@@ -19,14 +19,11 @@ module.exports = {
   /*
   ** Customize the progress bar color
   */
-  loading: { color: '#3B8070' }
-  /*mode: 'spa',
+  loading: { color: '#3B8070' },
+  mode: 'spa',
   router: {
-    base: "./"
-  },
-  build: {
-    maxChunkSize: 3000000
-  }*/
+    base: "/"
+  }
   /*
   ** Build configuration
   */

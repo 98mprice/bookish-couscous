@@ -34,7 +34,7 @@
       <v-layout column>
         <v-layout row>
           <v-flex xs12 sm4>
-            <v-card class="blue-card mb-3" @click="open('https://www.github.com/98mprice/98mprice.github.io')">
+            <v-card class="blue-card mb-3" @click="open('https://github.com/98mprice/resume')">
               <div class="text pa-3 text-xs-center">
                 Fork me!
               </div>
@@ -53,10 +53,11 @@
             </v-card>
           </v-flex>
         </v-layout>
+        <iframe src="/sounds/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
         <audio v-if="!show_splash" controls="controls" autoplay loop style="display: block;
   margin-left: auto;
   margin-right: auto;">
-          <source src="/sounds/wii.mp3" type="audio/mp3" />
+          <source id="player" src="/sounds/wii.mp3" type="audio/mp3" />
           Your browser does not support the audio element.
         </audio>
       </v-layout>
