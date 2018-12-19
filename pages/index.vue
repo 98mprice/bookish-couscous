@@ -1,5 +1,5 @@
 <template>
-  <v-layout column>
+  <v-layout column :class="$vuetify.breakpoint.mdAndUp ? 'ml-5 mr-5' : ''">
     <v-layout row wrap>
       <v-flex xs12 sm4 @click="goto('personal_projects')">
         <main-card

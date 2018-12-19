@@ -4,7 +4,20 @@
     <v-card class="blue-corner mb-3">
       <v-layout column>
         <v-layout row style="height: 12rem;">
-          <v-img v-if="project.screenshot_src" :src="project.screenshot_src" contain width="10rem" class="mt-1"></v-img>
+          <v-img
+            v-if="project.screenshot_src" :src="project.screenshot_src" contain width="10rem"
+            class="mt-1 grey lighten-3"
+          >
+            <v-layout
+              slot="placeholder"
+              fill-height
+              align-center
+              justify-center
+              ma-0
+            >
+              <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+            </v-layout>
+          </v-img>
           <video v-if="project.video_src" height="100%" autoplay loop muted class="pl-1 pt-2">
             <source :src="project.video_src" type="video/mp4" />
           </video>

@@ -11,7 +11,20 @@
       </v-layout>
     </v-layout>
     <v-layout v-else column>
-      <v-img :src="icon_src" max-height="10rem"></v-img>
+      <v-img
+        :src="icon_src" max-height="10rem"
+        class="grey lighten-3"
+      >
+        <v-layout
+          slot="placeholder"
+          fill-height
+          align-center
+          justify-center
+          ma-0
+        >
+          <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+        </v-layout>
+      </v-img>
       <v-layout column class="pt-3">
         <div class="black-heading pb-3 mb-2">
           {{name}}

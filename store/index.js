@@ -96,10 +96,10 @@ export const state = () => ({
       name: 'PSone.css',
       short_description: 'Playstation 1 style CSS Framework, inspired by NES.css',
       long_description: 'Playstation 1 style CSS Framework, inspired by NES.css. 100+ stars on Github',
-      icon_src: '/personal_projects/PSOne_css/icon.jpg',
+      icon_src: '/personal_projects/PSone_css/icon.jpg',
       short_languages: 'CSS',
       year: '2018',
-      screenshot_src: '/personal_projects/PSOne_css/screenshot.jpg',
+      screenshot_src: '/personal_projects/PSone_css/screenshot.jpg',
       links: [
         {
           name: 'Demo',

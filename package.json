@@ -5,9 +5,9 @@
   "author": "micah price <98mprice@gmail.com>",
   "private": true,
   "scripts": {
-    "dev": "NUXT_PORT=process.env.PORT nuxt",
-    "build": "NUXT_PORT=process.env.PORT nuxt build",
-    "start": "nuxt start --port process.env.PORT",
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
     "generate": "nuxt generate"
   },
   "dependencies": {
